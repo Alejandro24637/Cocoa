@@ -1,0 +1,47 @@
+h1,h2,h3,legend{
+    text-align: center;
+    font-family: fantasy;
+}
+
+h1{
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/447/761/non_2x/abstract-red-fluid-wave-background-free-vector.jpg);
+    padding: 20px;
+    font-family: 'Lucida Sans';
+}
+
+.menu{
+    width: 800px;
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.item p{
+    display:inline-block;
+}
+
+.food,  .pizza, .chicken{
+    text-align: left;
+    width: 70%;
+}
+
+.price{
+    text-align: right;
+    width: 25%;
+}
