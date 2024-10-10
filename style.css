@@ -17,10 +17,22 @@ h3{
     font-size: 30px;
 }
 
+ul{
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.title{
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+
 body{
     background-image: url(https://static.vecteezy.com/system/resources/previews/004/447/761/non_2x/abstract-red-fluid-wave-background-free-vector.jpg);
     padding: 20px;
     font-family: 'Lucida Sans';
+    font-weight: 1000;
+    font-size: 20px;
 }
 
 .menu{
@@ -28,8 +40,19 @@ body{
     background-color: aliceblue;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
-    max-width: 800px;
+    padding: 40px;
+    max-width: 1000px;
+}
+
+
+hr{
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+.bottom-line{
+    margin-top: 20px;
 }
 
 .item p{
@@ -44,4 +67,55 @@ body{
 .price{
     text-align: right;
     width: 25%;
+}
+
+
+/* footer */
+
+.link{
+    text-align: center;
+}
+
+a{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: red;
+}
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    .item {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea a la izquierda */
+    }
+
+    .item p {
+        margin: 5px 0; /* Espaciado entre elementos de texto */
+    }
+
+    nav ul {
+        padding-left: 0; /* Elimina el padding en la lista de navegación */
+        list-style-type: none; /* Elimina los puntos de la lista */
+    }
+
+    nav ul li {
+        display: block; /* Cambia a bloque en pantallas pequeñas */
+        margin-bottom: 10px; /* Espaciado entre elementos del menú */
+    }
+
+    footer {
+        text-align: center; /* Centra el pie de página */
+        padding: 20px 0; /* Espaciado adicional en el pie de página */
+    }
 }
