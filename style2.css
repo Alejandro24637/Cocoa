@@ -1,0 +1,140 @@
+h1, h2, h3, legend {
+    text-align: center;
+    font-family: fantasy;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+ul {
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/447/761/non_2x/abstract-red-fluid-wave-background-free-vector.jpg);
+    padding: 20px;
+    font-family: 'Lucida Sans';
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.menu {
+    width: 100%; /* Cambiado a 100% para que ocupe todo el ancho */
+    max-width: 800px; /* Limita el ancho máximo */
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+.bottom-line {
+    margin-top: 20px;
+}
+
+.item p {
+    display:inline-block;
+}
+
+.food, .pizza, .chicken {
+    text-align: left;
+    width: 70%;
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+/* footer */
+.link {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: red;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    
+    body {
+        font-size: 16px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+        padding: 10px; /* Reduce el padding general */
+    }
+
+    h1 {
+        font-size: 36px; /* Tamaño de fuente más pequeño para h1 */
+    }
+
+    h2 {
+        font-size: 28px; /* Tamaño de fuente más pequeño para h2 */
+    }
+
+    h3, .title {
+        font-size: 24px; /* Tamaño de fuente más pequeño para h3 y títulos */
+    }
+
+    .menu {
+        padding: 20px; /* Reduce el padding en la sección del menú */
+        width: auto; /* Permite que el menú se ajuste al ancho disponible */
+        max-width: none; /* Elimina el límite de ancho máximo en pantallas pequeñas */
+        box-shadow: none; /* Elimina sombras si las hay */
+        border-radius: 5px; /* Bordes redondeados opcionales */
+        /*background-color: rgba(255, 255, 255, 0.9);  Fondo con opacidad para mejor legibilidad */
+    }
+
+    .item {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea a la izquierda */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        margin-bottom: 15px; /* Espaciado entre elementos del menú */
+        border-bottom: none; /* Elimina bordes si es necesario */
+    }
+
+    .food, .pizza, .chicken {
+        width: auto; /* Permite que el texto ocupe el ancho disponible */
+        text-align: left; /* Alineación a la izquierda */
+        margin-bottom: 5px; /* Espaciado entre nombre y precio */
+    }
+
+    .price {
+        width:auto; /* Ajusta al contenido disponible */
+        text-align:left; /* Alinea a la izquierda para mejor visualización en móvil */
+        margin-top:-5px; /* Ajuste visual opcional */
+   }
+}
